@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="icon" href="../sticky-note.png">
+<title>to do list</title>
+</head>
+<body class="bg-blue-400">
+  <header >
+   <section class="container max-w-lg md:max-w-3xl lg:max-w-6xl mx-auto p-5 flex justify-between items-center ">
+    <div class="flex items-center">
+      <i class="fa-solid fa-list lg:text-3xl text-slate-800 md:text-2xl  hover:scale-150 transition duration-300"></i>
+      <span class=" lg:text-xl text-xs text-white ml-2 md:ml-5 font-bold md:text-lg ">make ur tasks</span> 
+    </div>
+    <div class="flex items-center">
+      <span class="text-white text-xs lg:text-xl mr-2 md:mr-5 font-bold md:text-lg  ">To Do </span>
+      <i class="fa-regular fa-circle-user lg:text-3xl  md:text-2xl text-slate-800  hover:scale-150 transition duration-300"></i>
+    </div>
+  </section>
+  </header>
+  
+    <section class=" container max-w-5xl mx-auto  p-10 my-12 rounded-3xl">
+      <div class="mb-11">
+      <p class=" font-bold text-white  text-center text-xs md:text-xl lg:text-2xl my-3">“If You Always Do What You've Always Done, You'll Always Get What You've Always Got.” ~ Henry Ford</p>
+       <div class="mt-9 flex items-center flex-col lg:flex-row gap-2">       
+        <input type="text" placeholder="Add New Task" class="inp basis-3/4  cursor-cell  px-4 py-2 md:px-6 md:py-4  lg:px-6 lg:py-4  w-full rounded-full outline-none text-blue-900 font-semibold text-xs md:text-base lg:text-lg">
+        <div class="flex justify-between lg:justify-normal lg:mt-0 mt-3 items-center gap-2 w-full lg:basis-3/12 ">
+        <input type="time" id="timepicker" class="date basis-9/12 md:basis-11/12 lg:basis-9/12 text-blue-900 outline-none font-semibold  px-4 py-2 md:px-6 md:py-4  lg:px-6 lg:py-4  rounded-full text-xs md:text-base lg:text-lg">
+        <button class="add-button h-8 w-8 md:w-12 md:h-12 lg:w-14 lg:h-14   rounded-full bg-green-500"><i class="fa-solid fa-plus text-sm md:text-xl lg:text-3xl text-white hover:scale-110 transition-all "></i></button>
+      </div>
+       </div>
+      </div>
+       <p class="text-xs md:text-lg lg:text-2xl text-white font-bold mb-6">this is your tasks :</p>
+
+        <div class="max-w-4xl mx-auto task-container">
+         
+        </div>
+        <p class="text-xs md:text-lg lg:text-2xl text-white font-bold mb-6">Finished  tasks :</p>
+
+        <div class="max-w-4xl mx-auto finished-task">
+         
+        </div>
+       </section>
+
+<script src="master.js"></script>
+</body>
+</html> 
